@@ -13,15 +13,16 @@ export default function DashboardLayout({
         <div className="flex h-screen">
 
           {/* sidebar */}
-          <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] bg-amber-300 p-4">
+          <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] p-4">
             <Link href={"/"} className="flex justify-center items-center lg:justify-start gap-2">
               <Image src={"/images/logo.png"} alt="school logo" width={32} height={32} />
               <span className="hidden lg:block">NextSchool</span>
             </Link>
+            <Sidebar />
           </div>
 
           {/* main content */}
-          <div className="w-[86%] m:w-[92%] l:w-[84%] xl:w-[86%] bg-blue-200">
+          <div className="w-[86%] m:w-[92%] l:w-[84%] xl:w-[86%]">
 
           </div>
         </div>
