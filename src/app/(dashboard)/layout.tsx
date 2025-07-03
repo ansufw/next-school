@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,7 +24,7 @@ export default function DashboardLayout({
 
           {/* main content */}
           <div className="w-[86%] m:w-[92%] l:w-[84%] xl:w-[86%]">
-
+            <Navbar />
           </div>
         </div>
             {children}
