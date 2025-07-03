@@ -9,9 +9,7 @@ export default function DashboardLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div>
-
-        <div className="flex h-screen">
+  return <div className="flex h-screen">
 
           {/* sidebar */}
           <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] p-4">
@@ -26,10 +24,7 @@ export default function DashboardLayout({
           <div className="w-[86%] m:w-[92%] l:w-[84%] xl:w-[86%]">
             <Navbar />
           </div>
-        </div>
-            {children}
-
-        <Sidebar />
-    </div>
+          
+        </div>  
   ;
 }

@@ -9,7 +9,31 @@ const Navbar = () => {
             <input type="text" placeholder="search.."></input>
         </div>
 
-        <div>profile icons</div>
+        <div className="flex items-center gap-6 w-full justify-end">
+          {/* msg icon */}
+          <div>
+            <Image src={"/images/message.png"} alt="message" height={20} width={20} />
+          </div>
+
+          {/* notif icon */}
+          <div>
+            <Image src={"/images/announcement.png"} alt="notification icon" height={20} width={20} />
+          </div>
+
+          {/* username */}
+          <div className="flex flex-col">
+            <span className="text-xs">John Doe</span>
+            <span className="text-[10px]">Admin</span>
+          </div>
+
+          {/* user icon */}
+          <div className="">
+            <Image className="rounded-full" src={"/images/avatar.png"} alt="user icon" height={30} width={30} />
+          </div>
+          
+
+        </div>
+        
     </div>
   )
 }
